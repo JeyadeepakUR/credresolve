@@ -7,7 +7,6 @@ import type {
   UserBalance,
   CreateUserData,
   CreateGroupData,
-  CreateExpenseData,
   CreateSettlementData,
   RegisterData,
   LoginData,
