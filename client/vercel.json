@@ -3,10 +3,7 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } }
   ],
-  "scripts": {
-    "build": "npm run build"
-  },
   "env": {
-    "VITE_API_BASE_URL": "https://YOUR_BACKEND_URL/api"
+    "VITE_API_BASE_URL": "https://credresolve-api.onrender.com/api"
   }
 }
