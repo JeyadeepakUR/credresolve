@@ -24,7 +24,12 @@ def create_app():
     app.url_map.strict_slashes = False
     CORS(
         app,
-        resources={r"/api/*": {"origins": "*"}},
+        resources={r"/*": {
+        "origins": [
+            "https://credresolve-z6n6.vercel.app", # Your production URL
+            "http://localhost:3000"                  # Your local dev URL
+        ]
+        }},
         supports_credentials=True,
         allow_headers=["Content-Type", "Authorization"],
         expose_headers=["Content-Type", "Authorization"]
